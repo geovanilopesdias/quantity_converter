@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
  * @since       1.0
  * @abstraction Physical quantities for problem solving purposes.
  */
-public class Quantity { // How to deal with 2D vector calculation?
+public class Quantity {
     private double value;
     private Unit unit;
     private final QuantityName name;
@@ -121,6 +121,4 @@ public class Quantity { // How to deal with 2D vector calculation?
         else if (needToConvert_ASIStandard_ToAnyOtherUnit){this.setValue(this.getValue()/unitNeeded.getConversionFactor());}
         else {this.setValue(this.getValue()*this.getUnit().getConversionFactor()/unitNeeded.getConversionFactor());}
         this.setUnit(unitNeeded);}
-    
-
-} // Quantity class closure =====================================================
+}
